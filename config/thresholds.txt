@@ -1,0 +1,4 @@
+# Warning thresholds
+memory_warning=100    # MB free
+disk_warning=90       # percentage
+error_warning=5       # errors per hour
