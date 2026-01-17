@@ -1,19 +1,49 @@
-# Server Health Check
+# 🖥️ Server Health Check
 
-A simple, lightweight server monitoring tool that performs daily health checks.
+A lightweight Bash script for automated server monitoring with daily health reports.
 
-## Features
-- System information (hostname, uptime, kernel)
-- CPU and memory monitoring
-- Disk space checking
-- Service status monitoring
+## ✨ Features
+- System resource monitoring (CPU, Memory, Disk)
+- Service status tracking
 - Network connectivity checks
-- Basic security checks
-- Log error detection
-- Daily automated reports at 5 PM
+- Security permission validation
+- Automated daily execution via cron
+- Complete logging system
 
-## Installation
+## 🚀 Quick Installation
 ```bash
-# 1. Download or clone the project
-# 2. Run the installer
+git clone https://github.com/Attrivishal/server-health-check.git
+cd server-health-check
+chmod +x install.sh checkup.sh
 sudo ./install.sh
+⚙️ Configuration
+Edit config files in /etc/server-check/:
+
+services.txt - Services to monitor (ssh, nginx, mysql, etc.)
+
+thresholds.txt - Warning levels for memory, disk, errors
+
+📅 Automation
+Runs automatically at 10 PM daily via cron.
+To change time: sudo crontab -e
+
+📊 Usage
+bash
+# Run manually
+sudo server-check
+
+# View logs
+cat ~/server-check-cron.log
+ls ~/server-health-check/logs/
+📝 Sample Output
+text
+✅ System: Ubuntu 22.04 (uptime: 15d)
+✅ Memory: 4.2GB free | ✅ Disk: 65% free
+✅ Services: 5/6 running | ✅ Network: Connected
+📁 Log: ~/server-health-check/logs/health_20260117_220000.log
+🔧 Requirements
+Linux/WSL2
+
+Bash 4.0+
+
+Sudo privileges

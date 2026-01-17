@@ -1,6 +1,0 @@
-ssh
-cron
-nginx
-mysql
-postgresql
-docker
