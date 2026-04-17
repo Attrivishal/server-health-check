@@ -13,6 +13,7 @@ else
     USER_HOME="$HOME"
 fi
 
+
 # Create log directory
 LOG_DIR="$USER_HOME/server-health-check/logs"
 mkdir -p "$LOG_DIR"
