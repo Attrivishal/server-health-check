@@ -27,6 +27,7 @@ thresholds.txt - Warning levels for memory, disk, errors
 Runs automatically at 10 PM daily via cron.
 To change time: sudo crontab -e
 
+
 📊 Usage
 bash
 # Run manually
