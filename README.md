@@ -23,6 +23,7 @@ services.txt - Services to monitor (ssh, nginx, mysql, etc.)
 
 thresholds.txt - Warning levels for memory, disk, errors
 
+
 📅 Automation
 Runs automatically at 10 PM daily via cron.
 To change time: sudo crontab -e
